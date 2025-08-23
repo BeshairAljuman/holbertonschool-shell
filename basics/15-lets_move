@@ -1,0 +1,6 @@
+#!/bin/bash
+for file in *; do
+    if [[ -f "$file" && "$file" =~ ^[A-Z] ]]; then
+        mv "$file" /tmp/u/
+    fi
+done
